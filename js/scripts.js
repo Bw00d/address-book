@@ -39,7 +39,10 @@ $(document).ready(function() {
 
     $("form#edit-contact").submit(function(event) {
       event.preventDefault();
-      
+      contactToEdit.firstName = $('input#edit-first-name').val();
+      contactToEdit.lastName = $('input#edit-last-name').val();
+      contactToEdit.address = $('input#edit-address').val();
+      // contactToEdit.html('<li>' + newContact.fullName() + '</li>');
     });
 
     this.reset();
